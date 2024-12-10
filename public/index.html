@@ -1,11 +1,311 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BET</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/public/images/FaviconRGB.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>axéBET</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- CATEGORY -->
+      <section>
+        <div class="flex p-10 items-center">
+          <div>
+            <img
+              class="select-none pointer-events-none w-[30%] md:w-[12%] lg:w-[11%] lg:ml-8"
+              src="/public/images/LogoLightRGB.png"
+              alt="This is the AxéBET logo!"
+            />
+          </div>
+          <div
+            class="flex gap-4 text-center text-white fonts-header items-center whitespace-nowrap"
+          >
+            <a
+              class="text-[#FEBE22] font-bold lg:text-[18px] lg:hover:text-white select-none"
+              href="#sobre-nos"
+              >Sobre nós</a
+            >
+            <a class="lg:text-[18px] animation btn select-none" id="btn-header" href="#"
+              >Receba Bônus</a
+            >
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- BANNER WITH TEXT -->
+      <section>
+        <div class="relative">
+          <img
+            src="/public/images/Banner01.png"
+            alt="Image of man dribbling on a football field"
+            class="w-full h-96 object-cover select-none pointer-events-none"
+          />
+
+          <h1
+            class="select-none absolute inset-y-0 left-0 text-left text-white title-header p-4 md:text-[40px] md:left-4"
+          >
+            TRADIÇÃO E SORTE<br />
+            DE MÃOS DADAS!
+          </h1>
+
+          <p
+            class="select-none absolute inset-y-0 left-0 text-white text-header md:text-[20px] md:left-4 md:top-12"
+          >
+            Aqui, cada jogo é uma celebração da<br />
+            diversão responsável<br />
+            Sinta a energia, aposte com segurança<br />
+            e aproveite cada vitória
+          </p>
+
+          <a
+            class="select-none absolute inset-y-0 left-0 btn-banner text-center md:h-[4%] md:left-4 md:top-24 lg:p-4 lg:top-20 lg:h-[12%] animation transition"
+            href="#"
+            >RECEBA BÔNUS</a
+          >
+
+          <div
+            class="select-none bg-[#EA1C35] flex text-center justify-center gap-8 text-[#D7CFCD] p-4 adjust-text lg:w-[50%] lg:rounded-[15px] lg:absolute lg:top-[23rem]"
+          >
+            <div>
+              <h3 id="num1" class="text-[24px] fade-in md:text-[32px]">00+</h3>
+              <p class="text-[10px] md:text-[14px]">Lorem ipsum</p>
+            </div>
+            <div>
+              <h3 id="num2" class="text-[24px] fade-in md:text-[32px]">00+</h3>
+              <p class="text-[10px] md:text-[14px]">Lorem ipsum</p>
+            </div>
+            <div>
+              <h3 id="num3" class="text-[24px] fade-in md:text-[32px]">00+</h3>
+              <p class="text-[10px] md:text-[14px]">Lorem ipsum</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    
+
+    <!-- MAIN -->
+    <main>
+      <section
+        class="text-center text-style md:flex md:flex-col md:items-center"
+      >
+        <h3 class="select-none mt-[2rem] text-white font-bold md:text-[2rem] lg:mt-44 lg:mb-[26px]">
+          O melhor do<br />
+          entreterimento está aqui
+        </h3>
+        <div class="lg:flex lg:flex-row select-none">
+          <div
+            class="flex bg-[#353535] flex-col text-center justify-center items-center margin-adjust md:w-[40%] lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-110 lg:duration-300"
+          >
+            <img class="img01 pointer-events-none" src="/public/images/Futebol.jpg" />
+            <p class="text-white mt-4 md:text-[20px]">
+              Campeonatos em destaque
+            </p>
+            <p class="text-[#FEBE22] mb-6 text-[12px] md:text-[16px]">
+              Aposta Esportiva
+            </p>
+          </div>
+          <div
+            class="flex bg-[#353535] flex-col text-center justify-center items-center margin-adjust md:w-[40%] lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-110 lg:duration-300"
+          >
+            <img class="img01 pointer-events-none" src="/public/images/Cassino.jpg" />
+            <p class="text-white mt-4 md:text-[20px]">Mais de 2.000 jogos</p>
+            <p class="text-[#FEBE22] mb-6 text-[12px] md:text-[16px]">
+              Cassino
+            </p>
+          </div>
+          <div
+            class="flex bg-[#353535] flex-col text-center justify-center items-center margin-adjust md:w-[40%] lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-110 lg:duration-300"
+          >
+            <img class="img01 pointer-events-none" src="/public/images/Carnaval.jpg" />
+            <p class="text-white mt-4 md:text-[20px]">Mais de 2.000 jogos</p>
+            <p class="text-[#FEBE22] mb-6 text-[12px] md:text-[16px]">
+              Cassino
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section
+        id="sobre-nos"
+        class="flex flex-col justify-center items-center text-center lg:flex-row lg:mt-28"
+      >
+        <div class="text-style mt-8">
+          <h3 class="select-none text-[#FEBE22] mb-4 md:text-[30px] lg:text-left lg:ml-8">Sobre nós</h3>
+          <h2 class="select-none font-bold text-white mb-2 md:text-[28px] lg:text-left lg:ml-8">
+            Lorem Ipsum Lorem Ipsum
+          </h2>
+          <p class="select-none text-white font-light mb-6 p-4 md:text-[24px] md:p-8 lg:text-left">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+            commodi dicta perferendis<br> sed labore voluptatum libero sunt
+            doloribus, fuga, quas architecto quis magnam<br> delectus placeat,
+            accusamus maiores officia necessitatibus explicabo!
+          </p>
+          <a class="select-none" id="btn" href="#">Receba Bônus</a>
+        </div>
+        <div class="relative flex flex-col items-center mt-5">
+          <div class="absolute right-12 mt-6 bg-[#FEBE22] p-4 md:p-8md:top-0">
+            <p class="select-none md:text-[36px]" id="num">00+</p>
+          </div>
+          <img
+            class="select-none pointer-events-none w-[50%] mt-4 mb-16 rounded md:w-[80%] md:mb-[140px]"
+            src="/public/images/Banner02.png"
+            alt="Banner"
+          />
+        </div>
+      </section>
+
+      <!-- FORM -->
+      <section class="mb-16">
+        <div
+          class="flex flex-col items-center justify-center md:flex-row md:justify-between"
+        >
+          <img
+            class="select-none pointer-events-none rounded mb-8 md:w-[55%] md:ml-12 lg:w-[40%] lg:ml-[140px] lg:mt-8"
+            src="/public/images/Banner03.png"
+          />
+
+          <form class="max-w-lg mx-auto lg:mr-[540px] lg:max-w-xl lg:ml-[2rem]">
+            <div class="select-none relative z-0 w-full mb-5 group">
+              <input
+                type="email"
+                name="floating_email"
+                id="floating_email"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-white focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_email"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-white peer-focus:dark:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Endereço de E-mail</label
+              >
+            </div>
+            <div class="select-none relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_password"
+                id="floating_password"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#FEBE22] focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_password"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#FEBE22] peer-focus:dark:text-[#FEBE22] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Telefone</label
+              >
+            </div>
+            <div class="select-none relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_password"
+                id="floating_password"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#138E58] focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_password"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#138E58] peer-focus:dark:text-[#138E58] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Seu Nome</label
+              >
+            </div>
+            <div class="select-none relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_password"
+                id="floating_password"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#EA1C35] focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_password"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#EA1C35] peer-focus:dark:text-[#EA1C35] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Escreva a Mensagem</label
+              >
+            </div>
+            <!-- <div class="grid md:grid-cols-2 md:gap-6">
+              <div class="relative z-0 w-full mb-5 group">
+                <input
+                  type="text"
+                  name="floating_first_name"
+                  id="floating_first_name"
+                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#138E58] focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="floating_first_name"
+                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#138E58] peer-focus:dark:text-[#138E58] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Seu nome</label
+                >
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+              <div class="relative z-0 w-full mb-5 group">
+                <input
+                  type="tel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  name="floating_phone"
+                  id="floating_phone"
+                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-[#EA1C35] focus:outline-none focus:ring-0 focus:border-[#EA1C35] peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="floating_phone"
+                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#EA1C35] peer-focus:dark:text-[#EA1C35] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Escreva sua mensagem</label
+                >
+              </div>
+            </div> -->
+            <button
+              type="submit"
+              class="select-none text-white bg-[#EA1C35] hover:bg-[#EA1C35] focus:ring-4 focus:outline-none focus:ring-[#EA1C35] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#EA1C35] dark:hover:bg-[#EA1C35]"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <div class="flex justify-center mb-10">
+        <img
+          class="select-none pointer-events-none w-[13%] md:w-[7%] md:mb-6 lg:w-[4%]"
+          src="/public/images/Icon.png"
+        />
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <div>
+      <img class="pointer-events-none select-none img-footer md:w-full lg:h-48 lg:object-cover" src="/public/images/Footer.png" />
+    </div>
+
+    <script src="/public/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
 </html>
